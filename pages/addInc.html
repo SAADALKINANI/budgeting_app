@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="content">
+
+        <!-- all the variables user's onputs being stored in
+const expenseData = {
+        eventName   -> document.getElementById('eventName').value,
+        amount      ->document.getElementById('amount').value,
+        eventDate   ->document.getElementById('eventDate').value,
+        repeatOption        ->document.getElementById('repeatOptions').value,
+        timestamp           -> new Date().getTime()
+    };
+-->
+
+        <head>
+            <link rel="stylesheet" href="../css/addExp.css">
+            <link rel="stylesheet" href="../css/styles.css">
+            <title>Add Income</title>
+        </head>
+
+        <body>
+            <div class="content">
+                <div class="header">Add Income</div>
+
+                <div class="form-container">
+                    <!-- Event name: text input -->
+                    <div class="form-row">
+                        <div class="form-label">Event Name</div>
+                        <div class="form-input">
+                            <input type="text" id="eventName" class="light-blue-input">
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="form-label">Income</div>
+                        <div class="form-input expense-container">
+                            <!-- Replace select dropdown with static USD text -->
+                            <div class="currency-static">$</div>
+
+                            <!-- Still keep the amount input -->
+                            <input type="text" id="amount" class="amount-input">
+
+                            <!-- Hidden input to store USD as currency value -->
+                            <input type="hidden" id="currency-select" value="USD">
+                        </div>
+                    </div>
+
+
+
+                    <!-- date: dropdown calendar -->
+                    <div class="form-row">
+                        <div class="form-label">Date of Event</div>
+                        <div class="form-input">
+                            <input type="date" id="eventDate" class="light-blue-input date-picker">
+                        </div>
+                    </div>
+
+                    <!-- repeat: dropdown menu -->
+                    <div class="form-row">
+                        <div class="form-label">Repeat</div>
+                        <div class="form-input">
+                            <select id="repeatOptions" class="light-pink-input repeat-select">
+                                <option value="none">None</option>
+                                <option value="daily">Daily</option>
+                                <option value="weekly">Weekly</option>
+                                <option value="monthly">Monthly</option>
+                                <option value="yearly">Yearly</option>
+                                <option value="custom">Custom...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--  'Custom' repeat options (initially hidden) -->
+                    <div id="customRepeatOptions" class="custom-repeat-container">
+                        <div class="custom-repeat-row">
+                            <div class="repeat-label">Frequency:</div>
+                            <div class="repeat-input">
+                                <select id="frequencyType" class="frequency-select">
+                                    <option value="weekly">Weekly</option>
+                                    <option value="monthly">Monthly</option>
+                                    <option value="yearly">Yearly</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <div class="custom-repeat-row">
+                            <div class="repeat-label">Every</div>
+                            <div class="repeat-input">
+                                <input type="number" id="frequencyCount" min="1" value="1" class="frequency-input">
+                                <span class="repeat-text">week on:</span>
+                            </div>
+                        </div>
+
+                        <div class="custom-repeat-row">
+                            <div class="weekday-selector">
+                                <div class="weekday" data-day="0">S</div>
+                                <div class="weekday" data-day="1">M</div>
+                                <div class="weekday selected" data-day="2">T</div>
+                                <div class="weekday" data-day="3">W</div>
+                                <div class="weekday selected" data-day="4">T</div>
+                                <div class="weekday" data-day="5">F</div>
+                                <div class="weekday" data-day="6">S</div>
+                            </div>
+                        </div>
+
+
+                        <div class="custom-repeat-buttons">
+                            <button class="cancel-button">Cancel</button>
+                            <button class="ok-button">OK</button>
+                        </div>
+                    </div>
+
+
+                    <!-- cancel: go back to page2
+                        save: go to confirmation-->
+                    <div class="bottons-container">
+                        <div class="btn-cancel" onclick="window.location.href='page2.html'">Cancel</div>
+                        <div class="btn-save" id="saveButton">Save</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="taskbar">
+        <button data-page="page1">
+            <img src="../public/home-svgrepo-com.svg" width="50px" style="margin-bottom: 5px" />Home
+        </button>
+        <button data-page="page2">
+            <img src="../public/search-svgrepo-com.svg" width="40px" style="margin-bottom: 10px" />Tracker
+        </button>
+        <button data-page="page3">
+            <img src="../public/dollar-sign-svgrepo-com.svg" width="45px" style="margin-bottom: 10px" />Goals
+        </button>
+        <button data-page="page4">
+            <img src="../public/profile-simple-svgrepo-com.svg" width="45px" style="margin-bottom: 10px" />Profile
+        </button>
+    </div>
+    </div>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/addIncScript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Goal</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/addExp.css" />
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">Edit Goal</div>
+        <div class="form-container">
+
+            <div class="form-row">
+                <div class="form-label">Goal Name</div>
+                <div class="form-input">
+                    <input type="text" id="goalName" class="light-blue-input" placeholder="Enter goal name" />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label">Saved Amount</div>
+                <div class="form-input">
+                    <input type="number" id="goalSaved" class="light-pink-input" placeholder="Enter saved amount" />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label">Target Amount</div>
+                <div class="form-input">
+                    <input type="number" id="goalTarget" class="light-pink-input" placeholder="Enter target amount" />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label">Goal Date</div>
+                <div class="form-input">
+                    <input type="date" id="goalDate" class="light-blue-input" />
+                </div>
+            </div>
+
+            <div class="bottons-container">
+                <div class="btn-cancel" onclick="cancelEdit()">Cancel</div>
+                <div class="btn-save" id="saveGoalButton" onclick="updateGoal()">Save</div>
+            </div>
+
+        </div>
+        <div class="taskbar">
+            <button data-page="page1">
+                <img src="../public/home-svgrepo-com.svg" width="50px" style="margin-bottom: 5px" />Home
+            </button>
+            <button data-page="page2">
+                <img src="../public/search-svgrepo-com.svg" width="40px" style="margin-bottom: 10px" />Tracker
+            </button>
+            <button data-page="page3">
+                <img src="../public/dollar-sign-svgrepo-com.svg" width="45px" style="margin-bottom: 10px" />Goals
+            </button>
+            <button data-page="page4">
+                <img src="../public/profile-simple-svgrepo-com.svg" width="45px" style="margin-bottom: 10px" />Profile
+            </button>
+        </div>
+    </div>
+
+    <script src="../js/scripts.js"></script>
+    <script src="../js/editGoals.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="content">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/page2.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Budget Tracker</h1>
+      <button id="add-expense-btn">Add Expense</button>
+      <button id="add-income-btn">Add Income</button>
+    </div>
+    <div class="filter-container">
+      <label for="filter-input">Filter by Name:</label><br>
+      <input type="text" id="filter-input" placeholder="Search by name..." /><br>
+
+      <label for="category-filter">Filter by Category:</label>
+      <br>
+      <select id="category-filter">
+        <option value="all">All</option>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+    </div>
+    <div class="container">
+      <h3>History</h3>
+      <ul id="list" class="list">
+      </ul>
+    </div>
+
+    <div class="taskbar">
+      <button data-page="page1">
+        <img src="../public/home-svgrepo-com.svg" width="50px" style="margin-bottom: 5px" />Home
+      </button>
+      <button data-page="page2">
+        <img src="../public/search-svgrepo-com.svg" width="40px" style="margin-bottom: 10px" />Tracker
+      </button>
+      <button data-page="page3">
+        <img src="../public/dollar-sign-svgrepo-com.svg" width="45px" style="margin-bottom: 10px" />Goals
+      </button>
+      <button data-page="page4">
+        <img src="../public/settings-svgrepo-com.svg" width="45px" style="margin-bottom: 10px" />Profile
+      </button>
+    </div>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/page2.js"></script>
+
+  </body>
+</div>
+
+</div>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Confirmation</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/confirmation.css" />
+</head>
+
+<body>
+  <div class="content">
+    <div class="receipt-container">
+      <div class="receipt-header">Confirmation</div>
+
+      <div id="receipt-content">
+        <!-- Content will be filled by JavaScript -->
+      </div>
+
+      <div class="receipt-footer">
+        <p>Thank you for using our budget tracker!</p>
+        <p id="timestamp"></p>
+      </div>
+
+      <div class="buttons-container">
+        <div class="btn btn-secondary" id="editButton">Edit</div>
+        <div class="btn btn-primary" id="continueButton">Continue</div>
+      </div>
+    </div>
+    <div class="taskbar">
+      <button data-page="page1">
+        <img src="../public/home-svgrepo-com.svg" width="50px" style="margin-bottom: 5px" />Home
+      </button>
+      <button data-page="page2">
+        <img src="../public/search-svgrepo-com.svg" width="40px" style="margin-bottom: 10px" />Tracker
+      </button>
+      <button data-page="page3">
+        <img src="../public/dollar-sign-svgrepo-com.svg" width="45px" style="margin-bottom: 10px" />Goals
+      </button>
+      <button data-page="page4">
+        <img src="../public/profile-simple-svgrepo-com.svg" width="45px" style="margin-bottom: 10px" />Profile
+      </button>
+    </div>
+  </div>
+
+  <script src="../js/scripts.js"></script>
+  <script src="../js/confirmScript.js"></script>
+</body>
+
+</html>

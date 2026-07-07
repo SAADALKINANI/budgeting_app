@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="content">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 1</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/addExp.css" />
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="header">Budget Settings</div>
+
+      <div class="form-container">
+        <div class="form-row">
+          <div class="form-label">Spend (%)</div>
+          <div class="form-input">
+            <input type="text" id="spend" class="light-blue-input" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-label">Save (%)</div>
+          <div class="form-input">
+            <input type="text" id="save" class="light-blue-input" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-label">Budget Per Month</div>
+          <div class="form-input">
+            <input type="text" id="BudgetPerMonth" class="light-blue-input" />
+          </div>
+        </div>
+
+        <div class="bottons-container">
+          <div class="btn-cancel" onclick="window.location.href='page1.html'">
+            Cancel
+          </div>
+          <div class="btn-save" id="save-btn">Save</div>
+        </div>
+      </div>
+    </div>
+    <div class="taskbar">
+      <button data-page="page1">
+        <img src="../public/home-svgrepo-com.svg" width="50px" style="margin-bottom: 5px" />Home
+      </button>
+      <button data-page="page2">
+        <img src="../public/search-svgrepo-com.svg" width="40px" style="margin-bottom: 10px" />Tracker
+      </button>
+      <button data-page="page3">
+        <img src="../public/dollar-sign-svgrepo-com.svg" width="45px" style="margin-bottom: 10px" />Goals
+      </button>
+      <button data-page="page4">
+        <img src="../public/profile-simple-svgrepo-com.svg" width="45px" style="margin-bottom: 10px" />Profile
+      </button>
+    </div>
+    <script src="../js/budget.js"></script>
+  </body>
+</div>
+
+</html>

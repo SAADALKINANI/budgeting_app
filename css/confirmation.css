@@ -1,0 +1,103 @@
+.receipt-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.receipt-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed #e0e0e0;
+}
+
+.receipt-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.receipt-label {
+    font-weight: 500;
+    color: #555;
+}
+
+.receipt-value {
+    font-weight: 600;
+    color: #222;
+    text-align: right;
+}
+
+.receipt-highlight {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #d9534f;
+}
+
+.receipt-footer {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 2px dashed #e0e0e0;
+    color: #777;
+    font-size: 14px;
+}
+
+.estimation-section {
+    background-color: #f3f9ff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.repeat-info {
+    padding: 10px;
+    background-color: #fff3ea;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #d9534f;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.custom-days {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.day-badge {
+    background-color: #e6e6e6;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+}
