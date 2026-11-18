@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const expense = JSON.parse(localStorage.getItem('currentExpense') || '{}');
     
     if (!expense.eventName) {
-        window.location.href = 'addExpense.html';
+        window.location.href = 'addExp.html';
         return;
     }
     
